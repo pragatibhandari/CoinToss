@@ -1,0 +1,105 @@
+:root {
+    --color1--:rgb(39, 86, 214);
+    --color2--:#af4261;
+    --color3--:#f3ec78;
+    --color4--:rgb(202, 243, 209);
+    --flipcolor--:white;
+}
+body{
+    Color: rgb(0, 0, 0);
+    background: linear-gradient( 0deg, var(--color1--), var(--color2--), var(--color3--), var(--color4--), var(--color1--),var(--color1--));
+}
+div.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color:rgb(255, 255, 255);
+    font-size: 25px;
+    padding:10px;
+    border: 2px solid white;
+    margin-top:30px;
+}
+#coin {
+    position: relative;
+    width: 23rem;
+    height: 23rem;
+    margin: 3rem 0rem 4rem 0rem;
+    transform-style: preserve-3d;
+}
+@media (max-height: 640px){
+    #coin {
+        width: 17rem;
+        height: 17rem;
+        margin: 2rem 0rem 2rem 0rem;
+    }
+}
+@media (max-width: 280px){
+    #coin {
+        width: 17rem;
+        height: 17rem;
+        margin: 2rem 0rem 2rem 0rem;
+    }
+    h1{
+        font-size: 20px;
+    }
+} 
+#coin div {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    background-size: contain;
+    position: absolute;
+}
+
+.heads{
+    background-image: url("./images/heads.jpg");
+    transform: rotateY(360deg);
+}
+.animate-heads {
+    animation: flipHeads 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes flipHeads {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(4700deg);
+    }
+}
+  
+.tails {
+    background-image: url("./images/tails.jpg");
+    transform: rotateY(-180deg);
+} 
+.animate-tails {
+    animation: flipTails 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes flipTails {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(4860deg);
+    }
+}
+
+#flip{
+    background:rgb(2, 63, 99);
+    color:var(--flipcolor--);
+    width: 200px;
+    padding: 20px;
+    border:px solid var(--flipcolor--);
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+}
+#flip:hover{
+    color:rgb(214, 213, 151);
+}
