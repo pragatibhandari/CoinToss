@@ -6,5 +6,5 @@
 
 
 
-![Picture of App UI when the result is heads](headsui.jpg)
-![Picture of App UI when the result is tails](tailsui.jpg)
+![Picture of App UI when the result is heads](headsui.PNG)
+![Picture of App UI when the result is tails](tailsui.PNG)
