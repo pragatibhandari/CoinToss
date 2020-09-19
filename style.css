@@ -101,6 +101,7 @@ h1{
     font-weight: 900;
     outline-style:none;
     border-width:0px;
+    border-style: none;
 }
 #flip:hover{
     color:rgb(214, 213, 151);
