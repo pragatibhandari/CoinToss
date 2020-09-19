@@ -9,5 +9,5 @@
 
 
 
-![Picture of App UI when the result is heads](./images/headsui.png)
+![Picture of App UI when the result is heads](./images/headsui.PNG)
 ![Picture of App UI when the result is tails](./images/tailsui.PNG)
